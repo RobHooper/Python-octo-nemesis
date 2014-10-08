@@ -1,0 +1,9 @@
+#!/usr/bin/python2.7
+a,b = 1,0
+
+if a > b:
+	print('a is greater than b')
+elif a < b:
+	print('a is less than b')
+else:
+	print('a is equal to b')

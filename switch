@@ -1,0 +1,11 @@
+#!/usr/bin/python2.7
+switch = dict(
+	one = 'switch 1',
+	two = 'switch 2',
+	three = 'switch 3'
+)
+var = 'two'
+
+#print(switch[var])
+#also set a default if var is not in dict
+print(switch.get(var,'default'))

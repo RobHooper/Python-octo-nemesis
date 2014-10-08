@@ -1,0 +1,75 @@
+#!/usr/bin/python2.7
+#when using print(type(x),y)
+#y will be printed as follows
+#Version 2.7: "look a \newline"
+#Version 3  : "look a
+#newline"
+#int
+a = 50
+print(type(a),a)
+
+#float
+b = 10.4
+print(type(b),b)
+
+#rounded float into int
+c = int(54.5)
+print(type(c),c)
+
+
+#text
+d = "look a \new line \\newline"
+print(type(d),d)
+print(d)
+
+#multiline string
+e = '''This
+is 
+A String'''
+print(type(e),e)
+print(e)
+
+#old variable input
+f = 'Variable F'
+#modulus = call a variable
+#'s' = string (replace depeneding on datatype)
+g = 'Here is variable F %s' % f
+print(g)
+
+#new variable input 	version 3
+h = 'Welcome, {}'.format(f)
+print(h)
+
+#tuple
+i = (1,2,3,4,5)
+print(type(i),i)
+
+#list
+j = [1,2,3,4,5]
+j.append(6)
+print(type(j),j)
+#doesn't print final number in range
+print(j[2:5])
+
+#dict
+#{'key':value}
+#{'id':5,'name':'Robert'}
+k = {'one':1, 'two':2}
+print(type(k),k)
+
+l = dict(
+	one = 1, two = 'two'
+)
+print(type(l),l)
+
+#boolean
+m = False
+print(type(m),m)
+
+#multiple values
+n,o,p = 0,1,2
+#following if statement is a boolean check
+if a == b:
+	print(True)
+else:
+	print(False)
