@@ -1,4 +1,6 @@
 Python-octo-nemesis
 ===================
 
-Learning Python:- A collection of small scripts
+A collection of python scripts
+
+Once I have covered the basics I will be able to reference these during bigger projects.
