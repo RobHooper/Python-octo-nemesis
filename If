@@ -9,3 +9,6 @@ if a != b:
 	print("a != b")
 if a == b and b > 1:
 	print(True)
+
+var = 'This is true' if a == b else 'this is not true'
+print(var)

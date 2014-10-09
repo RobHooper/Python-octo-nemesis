@@ -1,0 +1,8 @@
+#!/usr/bin/python2.7
+
+string_1 = "Camelot"
+string_2 = "place"
+# in the print function the %'s are placeholders for what is declared at the end of the function
+print "Let's not go to %s. 'Tis a silly %s." % (string_1, string_2)
+
+

@@ -1,0 +1,10 @@
+#!/usr/bin/python2.7
+
+parrot = "Norwegian Blue"
+# these methods work with other variable types
+print len(parrot) 	#Length(Int)
+print str(parrot)	#String	I.E. 2 becomes "2" 
+
+# .notation only works with strings
+print parrot.lower()	#lowercase
+print parrot.upper()	#UPPERCASE

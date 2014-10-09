@@ -1,0 +1,9 @@
+#!/usr/bin/python2.7
+
+my_int = 0
+
+def test():
+	my_int = 100
+	return my_int
+
+print test()
