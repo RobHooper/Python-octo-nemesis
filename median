@@ -1,0 +1,33 @@
+#!/usr/bin/python2.7
+
+def checkio(data):
+	print data
+	
+	data = sorted(data)
+	
+	if len(data) % 2 == 0:
+		#even
+		index1 = (len(data) / 2) - 1
+		print data[index1]
+		index2 = index1 + 1
+		print data[index2]
+		median = (data[index1] + data[index2]) / 2.0
+	else:
+		#odd
+		index1 = len(data) / 2 + 1
+		median = data[index1 - 1]
+	
+	print data
+	print median
+	return median
+
+
+if checkio([1, 2, 3, 3, 4, 5]) == 3:
+	print"Sorted list"
+if checkio([3, 1, 2, 5, 3]) == 3:
+	print "Not sorted list"
+if checkio([1, 300, 2, 200, 1]) == 2:
+	print "It's not an average"
+if checkio([3, 6, 20, 99, 10, 15]) == 12.5:
+	print "Even length"
+

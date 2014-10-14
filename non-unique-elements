@@ -1,0 +1,27 @@
+#!/usr/bin/python2.7
+
+def checkio(data):
+	print data
+	index = len(data) - 1
+	
+	while index >= 0:
+		#print index
+		dcount = data.count(data[index])
+		if dcount <= 1:
+			data.remove(data[index])
+			index = index - 1
+		else:
+			index = index - 1
+		 
+	print data
+	return data
+
+if checkio([1, 6, 3, 6, 3]) == [6, 3, 6, 3]:
+	print "1st example "
+if checkio([1, 2, 3, 4, 5]) == []:
+	print "2nd example"
+if checkio([5, 5, 5, 5, 5]) == [5, 5, 5, 5, 5]:
+	print "3rd example"
+if checkio([10, 9, 10, 10, 9, 8]) == [10, 9, 10, 10, 9]:
+	print "4th example"
+
