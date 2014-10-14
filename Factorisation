@@ -1,0 +1,17 @@
+#!/usr/bin/python2.7
+
+#number = 600851475143
+number = raw_input("Number to be factorised: ")
+number = int(number)
+
+factor = 2
+
+
+while factor ** 2  < number:
+	while number % factor == 0:
+		number = number / factor
+		print number
+	factor = factor + 1
+
+print number
+

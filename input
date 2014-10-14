@@ -1,0 +1,13 @@
+#!/usr/bin/python2.7
+#pauses/press any key to continue
+print('welcome to press anykey to continue program')
+
+#python 2.7
+raw_input('Prompt')
+# python 3
+#input('press anykey to continue')
+
+#input() # unsafe runs code
+
+
+print "End"

@@ -1,0 +1,26 @@
+#!/usr/bin/python2.7
+
+#number sequence
+#1,2,3,5,8,13,21,34
+
+n1 = 1
+n2 = 2
+fourmil = 4000000
+
+total = 0
+
+while n1 < fourmil or n2 < fourmil:
+	print n1
+	print n2
+	#Add the even numbers together
+	if n1 % 2 == 0:
+		total = total + n1
+
+	if n2 % 2 == 0:
+		total = total + n2
+	#Add up next numbers
+	n1 = n1 + n2
+	n2 = n2 + n1
+
+
+print "The total is: " + str(total)
