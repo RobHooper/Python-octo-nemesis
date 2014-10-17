@@ -1,0 +1,48 @@
+#!/usr/bin/python2.7
+N = 0
+M = 0
+palist = []
+
+def santa(data):
+	index = len(data) - 1
+	while index >= 0:
+		dcount = data.count(data[index])
+		if dcount > 1:
+			data.remove(data[index])
+			index = index - 1
+		else:
+			index = index - 1
+	return data
+
+def palindrome(x,y):
+	z = x * y
+	z = z
+	if str(z) == str(z)[::-1]:
+		palist.append(int(z))
+
+for N in range(0,100):
+	palindrome(N,M)
+	#print N
+	for M in range(0,100):
+		palindrome(N,M)
+		#print N,M
+print "\nunsorted"
+print palist
+palist = sorted(palist)
+print "\nsorted"
+print palist
+print "\nNo duplicates"
+print santa(palist)
+
+#for item in palist:
+#	print item
+
+#while int1 < 100:
+#	
+#	int1 = int1 + 1
+#	while int2 < 100:
+#		y = int1 * int2
+#		y = str(x)
+#		if y == y[::-1]:
+#			print y
+#		int2 = int2 + 

@@ -1,0 +1,19 @@
+#!/usr/bin/python2.7
+string = 'This is a long string of text'
+
+print(string.count('t'))
+print(string.title())
+
+#title	capitalise each word
+#(capitalise) the first word of the string
+
+connector = "-"
+sequence = ['a','b','c','d','e','f']
+
+# Join a list with a string
+print connector.join(sequence)
+
+#split a list using space as the deliminator
+print string.split(' ')
+
+
