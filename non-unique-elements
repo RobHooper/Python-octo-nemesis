@@ -1,7 +1,7 @@
 #!/usr/bin/python2.7
 
 def checkio(data):
-	print data
+	#print data
 	index = len(data) - 1
 	
 	while index >= 0:
@@ -13,7 +13,7 @@ def checkio(data):
 		else:
 			index = index - 1
 		 
-	print data
+	#print data
 	return data
 
 if checkio([1, 6, 3, 6, 3]) == [6, 3, 6, 3]:
