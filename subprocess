@@ -1,0 +1,25 @@
+#!/usr/bin/python2.7
+# To run commands on the ubuntu CLI via python
+# you have two options
+# https://docs.python.org/2/library/os.html
+# import os
+# https://docs.python.org/2/library/subprocess.html
+import os
+import subprocess
+
+path = subprocess.call(["pwd"]) 
+print path
+
+
+
+#TEST = "This is a variable"
+
+#subprocess.call(["ls", "-l"])
+# echos "test nospace This is a variable"
+#subprocess.call(["echo", "test", "no"+"space", TEST]) 
+
+# bash command "mpc -h lYK3sUDDRzSFhTP060Es@127.0.0.1 status"
+#MPCPASS = "lYK3sUDDRzSFhTP060Es"
+#subprocess.call(["mpc", "-h", MPCPASS+"@127.0.0.1", "status"])
+
+

@@ -1,0 +1,6 @@
+#!/usr/bin/python2.7
+number = 500;
+print 'number'
+print "number"
+print number
+print (number)

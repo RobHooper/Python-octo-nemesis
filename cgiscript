@@ -1,0 +1,18 @@
+#!/usr/bin/python2.7
+#How to test	  ? is start of variables
+#url/cgiscript.cgi?server=mail.example.com&email=dan@example.com&ssl=off
+import os
+
+print 'Content-type: text/html'
+print ''
+print '''
+<!DOCTYPE html>
+<html>
+<body>
+<h1>My First Heading</h1>'''
+for param in os.environ.keys():
+  print "<p><b>%20s</b>: %s</p>" % (param, os.environ[param])
+
+print'''
+</body>
+</html>'''
