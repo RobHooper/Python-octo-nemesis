@@ -1,0 +1,16 @@
+#!/usr/bin/python2.7
+
+#Setting cgi env variables for testing
+URL = "www.example.com/test.cgi?server=mail.example.com&email=dan@example.com&ssl=off"
+SCRIPT_NAME = "/cgi-bin/test.cgi"
+QUERY_STRING = "server=mail.example.com&email=dan@example.com&ssl=off"
+X = 0
+#End of variables
+
+#Split variable QUERY_STRING by the & 
+QUERY_LIST = QUERY_STRING.split('&')
+QUERY_LEN = len(QUERY_LIST)
+
+while X < QUERY_LEN:
+	print QUERY_LIST[X]
+	X = X + 1
