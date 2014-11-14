@@ -1,0 +1,18 @@
+#!/usr/bin/python2.7
+
+nlist = [1,2,3,4,5,6,7,8,9]
+
+print "Continue"
+for nint in nlist:
+	if nint == 7:
+		continue
+	else:
+		print nint
+
+print "Break"
+for nint in nlist:
+	if nint == 7:
+		break
+	else:
+		print nint
+

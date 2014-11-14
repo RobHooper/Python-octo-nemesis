@@ -1,0 +1,14 @@
+#!/usr/bin/python2.7
+print 'Content-type: text/html'
+print ''
+import redis, os
+
+# Connect to redis
+r = redis.StrictRedis(host='localhost', port=6379, db=0)
+
+# Set key IP:1 to the REMOTE_ADDR value in the browser
+r.set('IP:1', os.environ['REMOTE_ADDR'])
+
+# Get and print the value in IP
+print r.get('IP:1')
+

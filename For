@@ -9,5 +9,10 @@ for key,data in enumerate('string'):
 	if key % 2 == 0:
 		print('The letter {} is in an even location'.format(data))
 
-for N in range(0,100):
+for N in range(0,10):
+	print "Current number: ", N
+
+
+PN = 10
+for N in range(0,PN+1):
 	print "Current number: ", N

@@ -1,0 +1,15 @@
+#!/usr/bin/python2.7
+
+#http://python-gtk-3-tutorial.readthedocs.org/en/latest/introduction.html
+
+#Import the GTK classes and functions
+from gi.repository import Gtk
+
+#Create a window
+win = Gtk.Window()
+#Ensures program is terminated when you close the program
+win.connect("delete-event", Gtk.main_quit)
+#Display the window
+win.show_all()
+#Start processing loop
+Gtk.main()

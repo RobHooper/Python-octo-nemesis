@@ -1,0 +1,9 @@
+#!/usr/bin/python2.7
+
+# This is equal to
+def f (x): return x**2
+print f(8)
+# This
+g = lambda x: x**2
+print f(8)
+
