@@ -2,9 +2,9 @@
 
 import time
 
-time.time()
-time.gmtime()
-time.ctime()
+print time.time()
+print time.gmtime()
+print time.ctime()
 
 #Var time now
 timenow = time.time()
@@ -16,4 +16,6 @@ difference = 60 * 60 * 24 * 5
 
 timelater = timenow + difference
 
-
+print timenow
+print timelater
+print time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(timenow))

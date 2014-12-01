@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Email setup guide</h2>
+<p>Your email is [[EMAIL]]</p>
+<p>Port in is [[PORTIN]]</p>
+
+
+</body>
+</html>

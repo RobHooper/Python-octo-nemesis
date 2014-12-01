@@ -1,0 +1,44 @@
+#!/usr/bin/python2.7
+
+import time
+STARTT = time.time()
+# http://stackoverflow.com/questions/9233408/project-euler-10-why-the-first-python-code-runs-much-faster-than-the-second-on
+# http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+#The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+#Find the sum of all the primes below two million.
+
+X = 5 # X is the counter of how many prime numbers I calculate
+
+list1 = [2,3,5,7]
+total = 0
+
+def test(N):
+	for PN in list1:
+		if N % PN == 0:
+			return False
+	else:
+		return True
+
+for Y in xrange(9,100,2):
+	#if Y % 3 == 0 or Y % 5 == 0 or Y % 7 == 0:
+	#	continue
+	#else:
+	if test(Y) == True:
+		print X," : ",Y
+		list1.append(Y)
+		X += 1
+	Y += 1
+
+for P in list1:
+	total += P
+
+print "Total : ",total
+
+print STARTT
+STOPT = time.time()
+print STOPT
+print STOPT - STARTT
+
+
+#457143142877
+#142913828922

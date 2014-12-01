@@ -7,7 +7,7 @@ list1 = []
 
 def test(PN):
 	
-	for N in range(1,PN):
+	for N in xrange(1,PN):
 		if N == 1 or N == PN:
 			continue
 		if PN % N == 0:
@@ -15,7 +15,6 @@ def test(PN):
 	else:
 		return True
 
-#10002 because the for loop doesnt count the final number
 while X <= 10001:
 	if test(Y) == True:
 		print X," : ",Y
