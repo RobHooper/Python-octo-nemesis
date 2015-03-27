@@ -1,5 +1,6 @@
 #!/usr/bin/python2.7
-
+import time
+StartTime = time.time()
 #http://python-gtk-3-tutorial.readthedocs.org/en/latest/introduction.html
 
 #Import the GTK classes and functions
@@ -12,4 +13,5 @@ win.connect("delete-event", Gtk.main_quit)
 #Display the window
 win.show_all()
 #Start processing loop
+print time.time() - StartTime
 Gtk.main()

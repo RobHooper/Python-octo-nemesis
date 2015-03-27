@@ -10,3 +10,5 @@ class Person:
 rob = Person('Male','Rob')
 rob.display()
 
+alex = Person('Dude','Alex')
+alex.display()

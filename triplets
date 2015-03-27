@@ -25,30 +25,29 @@
 #	Y += N * N
 #print X
 #print Y
+import sys
 
+A = 0
+B = 0
 
-a = 0
-b = 0
-c = 0
+X = 100
 
-x = 100 # sum of a+b+c
+C = int(X * 0.5)
 
+while (A + B) != C:
+	print A, B, C, X
+	while A < B:
+		A += 1
+		print A, B, C, X
+		if (A + B) == C:
+			print "True"
+		if A > 100 or B > 100:
+			print "Error"
+			sys.exit()
+	print "Test"
+	B += 1
+	A = 0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print "End"
+print A, B, C, X
+#A < B 

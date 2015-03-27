@@ -10,6 +10,9 @@ import subprocess
 path = subprocess.call(["pwd"]) 
 print path
 
+print subprocess.call(["ls","-al"]) 
+# This wont work
+#print subprocess.call(["ls -al"]) 
 
 
 #TEST = "This is a variable"

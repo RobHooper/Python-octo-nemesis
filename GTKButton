@@ -1,14 +1,19 @@
 #!/usr/bin/python2.7
+import time
+StartTime = time.time()
 from gi.repository import Gtk
 
 class MyWindow(Gtk.Window):
 	def __init__(self):
 		#Create window
 		Gtk.Window.__init__(self, title="hello")
+		#window.connect("destroy", lambda w: gtk.main_quit())
 		#Create button (Toggle)
 		self.button = Gtk.Button(label="Hello World")
 		self.button.connect("clicked", self.on_button_clicked)
 		self.add(self.button)
+		print time.time() - StartTime
+	#Method that is called on button click
 	def on_button_clicked(self, widget):
 		print widget
 		print "Hello world"
