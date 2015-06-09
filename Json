@@ -1,0 +1,6 @@
+#!/usr/bin/python2.7
+import json
+
+y = json.loads(open("Json-Store.json").read())
+
+print json.dumps(y,indent=1)

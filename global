@@ -1,0 +1,7 @@
+#!/usr/bin/python2.7
+global outside_var
+outside_var = 1
+
+class classname():
+	
+	def method_one

@@ -1,7 +1,7 @@
 #!/usr/bin/python2.7
 
-import time
-STARTT = time.time()
+#import time
+#STARTT = time.time()
 # http://stackoverflow.com/questions/9233408/project-euler-10-why-the-first-python-code-runs-much-faster-than-the-second-on
 # http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
 #The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
@@ -34,10 +34,10 @@ for P in list1:
 
 print "Total : ",total
 
-print STARTT
-STOPT = time.time()
-print STOPT
-print STOPT - STARTT
+#print STARTT
+#STOPT = time.time()
+#print STOPT
+#print STOPT - STARTT
 
 
 #457143142877

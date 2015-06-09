@@ -1,0 +1,23 @@
+#!/usr/bin/python2.7
+#Write a function that takes two equal-length buffers and produces their XOR combination.
+#If your function works properly, then when you feed it the string:
+
+ONE = '1c0111001f010100061a024b53535009181c'
+
+#... after hex decoding, and when XOR'd against:
+
+TWO = '686974207468652062756c6c277320657965'
+
+#... should produce:
+
+ANS = '746865206b696420646f6e277420706c6179'
+
+
+for i in range(0, len(ONE.decode("hex"))):
+    print bool(ONE.decode("hex")[i]) ^ bool(TWO.decode("hex")[i])
+
+
+XOR = bool(1) ^ bool(1) # False
+XOR = bool(0) ^ bool(1) # True
+XOR = bool(1) ^ bool(0) # True
+XOR = bool(0) ^ bool(0) # False

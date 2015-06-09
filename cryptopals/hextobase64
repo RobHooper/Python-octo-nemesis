@@ -1,0 +1,19 @@
+#!/usr/bin/python2.7
+# Always operate on raw bytes, never on encoded strings. Only use hex and base64 for pretty-printing.
+# Hex value
+VAL = '49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d'
+# Expected Base 64 value
+ANS = 'SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t\n'
+
+import binascii
+
+def hextob64(hx):
+    print hx
+    X = hx.decode("hex")
+    print X
+    Y = binascii.b2a_base64(X)
+    print Y
+    return Y
+
+if hextob64(VAL) == ANS:
+    print "Done"

@@ -1,0 +1,33 @@
+#!/usr/bin/python2.7
+from gi.repository import Gtk
+
+class MyWindow(Gtk.Window):
+	def __init__(self):
+		#Create window
+		Gtk.Window.__init__(self)
+		self.connect("check-resize",self.on_focus)
+		#Gtk.Window.activate_focus(print "Focus")
+		
+		#, title="hello")
+		#Create button (Toggle)
+		self.button = Gtk.Button(label="Hello World")
+		self.button.connect("clicked", self.on_button_clicked)
+		self.add(self.button)
+		
+	
+	#Method that is called on button click
+	def on_button_clicked(self, widget):
+		print widget
+		print "Hello world"
+	
+	def on_focus(self, widget):
+		print widget
+		print "Focused"
+
+win = MyWindow()
+win.set_title("BLALALAL")
+win.connect("delete-event", Gtk.main_quit)
+#win.connect("activate-focus",self.on_button_clicked)
+win.show_all()
+
+Gtk.main()
