@@ -1,0 +1,49 @@
+#!/usr/bin/python2.7
+#Some positive integers n have the property that the sum [ n + reverse(n) ] consists entirely of odd (decimal) digits.
+#For instance, 36 + 63 = 99 and 409 + 904 = 1313.
+#We will call such numbers reversible; so 36, 63, 409, and 904 are reversible.
+#Leading zeroes are not allowed in either n or reverse(n).
+
+#There are 120 reversible numbers below one-thousand.
+
+#How many reversible numbers are there below one-billion (10**9)?
+
+X = 1000
+
+LST = list(range(10,X))
+
+def sieve(NO, ON):
+    # If same number:
+    if NO == ON:
+        return False
+    # If leading zero is truanced
+    if len(str(NO)) != len(str(ON)):
+        return False
+    # If both are even
+    if NO % 2 == 0 and ON % 2 == 0:
+        return False
+    # If both are odd
+    if NO % 2 != 0 and ON % 2 != 0:
+        return False
+    # If they return a even no
+    X = NO + ON
+    if X % 2 == 0:
+        return False
+    #print X
+    return True
+
+
+for X in LST:
+    # Reverse
+    Y = int(str(X)[::-1])
+    # sieve out bad ones
+    if sieve(X, Y) == False:
+        LST.remove(X)
+        try:
+            LST.remove(Y)
+        except:
+            continue
+
+
+print LST
+print len(LST)
