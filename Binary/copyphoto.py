@@ -1,6 +1,6 @@
 #!/usr/bin/python2.7
 
-# Copies input to output
+# Copies input of an image to output image
 
 buffersize = 100000
 input = open('paris.jpg','rb')
