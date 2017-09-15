@@ -12,3 +12,15 @@ if a == b and b > 1:
 
 var = 'This is true' if a == b else 'this is not true'
 print(var)
+
+x = int(input("Enter a number"))
+
+if x < 0:
+	x = 0
+	print('Negative changed to zero')
+elif x == 0:
+	print('Zero')
+elif x == 1:
+	print('Single')
+else:
+	print('More')
