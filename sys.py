@@ -8,3 +8,6 @@ if (len(sys.argv) < 3) or (len(sys.argv) > 3):
 print sys.argv[0]
 print sys.argv[1]
 print sys.argv[2]
+
+
+sys.exit()
